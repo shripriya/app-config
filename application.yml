@@ -20,8 +20,10 @@ server:
 
 eureka:
   instance:
+    hostname: localhost
     secure-port-enabled: true
     nonSecurePortEnabled: false
     homePageUrl: https://${eureka.instance.hostname}:${server.port}/
     statusPageUrl: https://${eureka.instance.hostname}:${server.port}/info
     healthCheckUrl: https://${eureka.instance.hostname}:${server.port}/health
+    
