@@ -10,3 +10,10 @@ logging:
   level:
     io:
       pivotal: DEBUG
+
+server:
+  ssl:
+    key-store: keystore.p12
+    key-store-password: mycert
+    keyStoreType: PKCS12
+    keyAlias: mycert
